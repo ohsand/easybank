@@ -370,29 +370,6 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
-    /* #main {
-        flex-direction: column-reverse;
-        position: static;
-        margin-top: 50px;
-    }
-
-    #mainLeft, #mainRight {
-        width: 100%;
-    }
-    
-    header {
-        position: static;
-    }
-
-    #mainRight {
-        margin-top: 50px;
-        margin-bottom: 10%;
-    } */
-
-    /* #mainRight img {
-        max-width: 600px;
-    } */
 }
 
 @media screen and (max-width: 700px) {
