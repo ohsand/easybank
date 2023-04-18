@@ -16,6 +16,7 @@
   <div id="headerContainer" class="container">
     <header>
       <img src="./images/logo.svg" alt="logo">
+      <img id="hamburger" src="./images/icon-hamburger.svg" alt="hamburger">
       <nav>
         <ul>
           <li><a href="#" class="nav-link">Home</a></li>
@@ -27,6 +28,17 @@
       </nav>
       <button class="inviteBtn">Request Invite</button>
     </header>
+  </div>
+  <div id="mobileNav" class="invisible">
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+        <li><a href="#" class="nav-link">Blog</a></li>
+        <li><a href="#" class="nav-link">Careers</a></li>
+      </ul>
+    </nav>
   </div>
 
   <div id="mainContainer" class="container">
@@ -162,20 +174,14 @@
     </div>
   </div>
 
-  <!-- 
-
-  
-
-  About Us
-  Contact
-  Blog
-  Careers
-  Support
-  Privacy Policy
-
-  Request Invite
-
-  © Easybank. All Rights Reserved -->
+  <script>
+    window.onload = function() {
+      document.getElementById("hamburger").addEventListener('click', function (e) {
+      var navbar = document.getElementById("mobileNav");
+      navbar.classList.toggle("invisible");
+      });
+    }
+  </script>
   
 </body>
 </html>

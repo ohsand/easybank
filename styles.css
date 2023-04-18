@@ -61,6 +61,50 @@ header button {
     margin-top: -5px;
 }
 
+#hamburger {
+    display: none;
+}
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
+.invisible {
+    display: none !important; 
+}
+
+#mobileNav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid var(--light-grayish-blue);
+    padding: 30px 20px;
+    max-width: 1440px;
+    position: absolute;
+    top: 89px;
+    background-color: var(--light-grayish-blue);
+    z-index: 100;
+}
+
+
+#mobileNav nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#mobileNav nav ul li a  {
+    text-decoration: none;
+    color: var(--dark-blue);
+    font-size: 1.1em;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+#mobileNav ul li {
+    margin-bottom: 0px;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -346,6 +390,11 @@ footer a:hover {
     header nav, header button {
         display: none;
     }
+
+    #hamburger {
+        display: block;
+    }
+    
 
     #processes {
         flex-wrap: wrap;
